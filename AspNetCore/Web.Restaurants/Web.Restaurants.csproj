@@ -9,4 +9,13 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Restaurants.Data">
+      <HintPath>..\Data.Restaurants\bin\Debug\netcoreapp2.1\Restaurants.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Restaurants.Models">
+      <HintPath>..\Models.Restaurants\bin\Debug\netcoreapp2.1\Restaurants.Models.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

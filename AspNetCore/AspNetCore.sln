@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Restaurants", "Web.Restaurants\Web.Restaurants.csproj", "{0AFC289E-8EAA-4690-9D29-D62E44C7E4C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web.Restaurants", "Web.Restaurants\Web.Restaurants.csproj", "{0AFC289E-8EAA-4690-9D29-D62E44C7E4C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models.Restaurants", "Models.Restaurants\Models.Restaurants.csproj", "{FEBF7115-540B-4ADC-8FD8-AA306EF0F165}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurants.Models", "Models.Restaurants\Restaurants.Models.csproj", "{FEBF7115-540B-4ADC-8FD8-AA306EF0F165}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Restaurants", "Data.Restaurants\Data.Restaurants.csproj", "{A56600D3-F1CC-447C-8E25-F7C7E6DD4BF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurants.Data", "Data.Restaurants\Restaurants.Data.csproj", "{A56600D3-F1CC-447C-8E25-F7C7E6DD4BF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
