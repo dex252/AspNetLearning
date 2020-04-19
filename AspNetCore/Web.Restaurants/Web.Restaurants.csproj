@@ -7,15 +7,12 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Restaurants.Data">
-      <HintPath>..\Data.Restaurants\bin\Debug\netcoreapp2.1\Restaurants.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Restaurants.Models">
-      <HintPath>..\Models.Restaurants\bin\Debug\netcoreapp2.1\Restaurants.Models.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\Data.Restaurants\Restaurants.Data.csproj" />
+    <ProjectReference Include="..\Models.Restaurants\Restaurants.Models.csproj" />
   </ItemGroup>
 
 </Project>

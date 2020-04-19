@@ -1,7 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Data.Restaurants;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -16,16 +13,17 @@ namespace Web.Restaurants.Pages.Restaurants
         public IConfiguration config { get; set; }
         public string Message { get; set; }
         public IEnumerable<Restaurant> Restaurants { get; set; }
-
+        [BindProperty(SupportsGet = true)]
+        public string SearchTerm { get; set; }
         public ListModel(IConfiguration config, IRestaurant restaurantData)
         {
             this.restaurantData = restaurantData;
             this.config = config;
+            Message = config["Message"];
         }
         public void OnGet()
         {
-            Message = config["Message"];
-            Restaurants = restaurantData.GetAll();
+            Restaurants = restaurantData.GetRastaurantsByName(SearchTerm);
         }
     }
 }

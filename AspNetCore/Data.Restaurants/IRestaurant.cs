@@ -5,6 +5,7 @@ namespace Data.Restaurants
 {
     public interface IRestaurant
     {
-        IEnumerable<Restaurant> GetAll();
+        IEnumerable<Restaurant> GetRastaurantsByName(string name);
+        Restaurant GetById(int id);
     }
 }
